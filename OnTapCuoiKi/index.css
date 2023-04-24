@@ -1,0 +1,17 @@
+.banner{
+    width: 100%;
+}
+
+.button{
+    padding: 20px 10px;
+    background-color: #fff;
+    margin: 0px;
+    border-radius: 0px;
+    border-bottom: 1px #000000 solid;
+    border-top: 1px #000000 solid;
+    list-style: none;
+}
+.button>.Datlich {
+    color: #337ab7;
+}
+

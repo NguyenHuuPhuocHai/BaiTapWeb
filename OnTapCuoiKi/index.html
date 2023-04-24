@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTapCuoiKi</title>
+
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <img src="img/Screenshot 2023-04-23 233008.png" alt="" class="banner">
+
+    
+    <ol class="button">
+        <li>
+            <a href="#">Trang chủ</a>
+        </li>
+            <a href="#modal-table" data-toggle="modal">Đặt lịch</a>
+            <div class="modal fade" id="modal-table">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Đặt lịch khám online</h4>
+                        </div>
+                        <div class="modal-info">
+                            <form action="" method="post" role="form">
+                                <div class="form-dangky">
+                                    <label for="">Mã bệnh nhân</label>
+                                    <input type="text" placeholder="Mã bệnh nhân" class="form-control" >
+                                    <p>(*)BN-YYYYY</p>
+                                </div>
+                                <div class="form-dangky">
+                                    <label for="">Mật khẩu</label>
+                                    <input type="password" placeholder="Mật khẩu" class="form-control" >
+                                    <p>(*)</p>
+                                </div>
+                                <div class="form-dangky">
+                                    <label for="">Ngày khám</label>
+                                    <input type="date" placeholder="Ngày khám" class="form-control" >
+                                    <p>(*)</p>
+                                </div>
+                                <div class="form-dangky">
+                                    <label for="">Loại dịch vụ</label>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="loaiDichVu" value="50000">
+                                            Khám bệnh theo yêu cầu
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="loaiDichVu" value="50000">
+                                            Điều trị ngoại trú
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="loaiDichVu" value="50000">
+                                            Bác sĩ theo yêu cầu
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-dangky">
+                                    <label for="">Chuyên khoa</label>
+                                    <select id="specialist" class="form-control" required="required">
+                                        <option value="1">Ngoại tổng quát</option>
+                                        <option value="2">Nhi</option>
+                                        <option value="3">Nội tổng quát</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-primary">Đặt lịch</button>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+
+
+    </ol>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã bệnh nhân</th>
+                <th>Mật khẩu</th>
+                <th>Ngày khám</th>
+                <th>Phụ thu dịch vụ</th>
+                <th>Chuyên khoa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>BN-01234</td>
+                <td>123456a</td>
+                <td>12/8/2020</td>
+                <td>1000000</td>
+                <td>Ngoại tổng quát</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
